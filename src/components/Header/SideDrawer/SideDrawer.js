@@ -24,20 +24,30 @@ const SideDrawer = ({ toggle, isOpen }) => {
 
 			<MenuConatainer>
 				<MenuButton>
-					<Links href='/'>
+					<Links onClick={toggle} href='#'>
 						LOGIN <br /> For a Better Experience
 					</Links>
 					<RightArr />
 				</MenuButton>
 				<WatchlistLinkWrap>
-					<Links href='/'>Watchlist</Links>
+					<Links onClick={toggle} href='/'>
+						Watchlist
+					</Links>
 				</WatchlistLinkWrap>
 
 				<MenuLinksWrapper>
-					<MenuLink href='/'>Premium</MenuLink>
-					<MenuLink href='/'>Channel</MenuLink>
-					<MenuLink href='/'>Languages</MenuLink>
-					<MenuLink href='/'>Geners</MenuLink>
+					<MenuLink onClick={toggle} href='/'>
+						Premium
+					</MenuLink>
+					<MenuLink onClick={toggle} href='/'>
+						Channels
+					</MenuLink>
+					<MenuLink onClick={toggle} href='/'>
+						Languages
+					</MenuLink>
+					<MenuLink onClick={toggle} href='/'>
+						Geners
+					</MenuLink>
 				</MenuLinksWrapper>
 				<SubButtonWrap>
 					<SubscribeBtn href='/'>SUBSCRIBE</SubscribeBtn>

@@ -1,7 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import NavBar from '../../components/Header/NavBar/NavBar';
-import SideDrawer from '../../components/Header/SideDrawer/SideDrawer';
-import { Backdrop } from '../../components/UI/Backdrop.styles';
+import HeaderNavs from '../../components/Header/HeaderNavs';
 
 const Home = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +10,8 @@ const Home = () => {
 
 	return (
 		<Fragment>
-			<Backdrop onClick={toggleMenu} isOpen={isOpen} />
-			<SideDrawer toggle={toggleMenu} isOpen={isOpen} />
-			<NavBar toggle={toggleMenu} />
+			<HeaderNavs toggle={toggleMenu} isOpen={isOpen} />
+		
 		</Fragment>
 	);
 };
